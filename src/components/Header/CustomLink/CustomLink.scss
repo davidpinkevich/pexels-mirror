@@ -1,0 +1,22 @@
+.header__link-author {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  font-weight: 600;
+  &:hover {
+    & p {
+      color: rgba(238, 230, 230, 1);
+    }
+    & span {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  & p {
+    transition: all 0.3s;
+    color: rgba(238, 230, 230, 0.6);
+    & span {
+      transition: all 0.3s;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
