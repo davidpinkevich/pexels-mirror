@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { TypePhoto } from "types";
+import { TypePhoto } from "components/Photos/Item/Item.types";
 
 interface TypesInitialState {
   search: string;
