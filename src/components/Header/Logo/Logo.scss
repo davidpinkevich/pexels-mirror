@@ -1,6 +1,6 @@
 .logo {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 40px;
   z-index: 1;
   display: flex;
@@ -11,12 +11,16 @@
   &:hover &__img:after {
     opacity: 0.3;
   }
-  &:hover &__name {
+  &:hover &__name-white {
     color: rgb(176, 173, 173);
   }
-  &__name {
+  &__name-white {
     transition: all 0.2s;
     color: rgb(255, 255, 255);
+  }
+  &__name-black {
+    transition: all 0.2s;
+    color: rgb(0, 0, 0);
   }
   &__img {
     position: relative;
