@@ -1,3 +1,3 @@
 import { TypePhoto } from "components/Photos/Item/Item.types";
 
-export type TypeHeader = { photo: TypePhoto | undefined };
+export type TypeHeader = { random: TypePhoto };
