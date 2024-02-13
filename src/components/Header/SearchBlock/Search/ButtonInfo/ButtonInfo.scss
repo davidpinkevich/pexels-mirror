@@ -37,3 +37,17 @@
 .tooltip__open {
   transform: rotate(180deg);
 }
+
+.sticky__info {
+  border: none;
+  background-color: rgb(247, 247, 247);
+  &:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 1px;
+    height: 90%;
+    background-color: rgb(225, 222, 222);
+  }
+}
