@@ -6,7 +6,7 @@ import Tooltip from "./Tooltip/Tooltip";
 import img from "assets/icons/arrow.svg";
 import "./ButtonInfo.scss";
 
-const ButtonInfo = () => {
+const ButtonInfo = ({ sticky }: { sticky: boolean }) => {
   const [timer, setTimer] = useState<NodeJS.Timeout>();
   const { tooltip, typeSearch } = useAppSelector(getState);
   const dispatch = useAppDispatch();
@@ -23,7 +23,9 @@ const ButtonInfo = () => {
 
   return (
     <div
-      className="search__block-info"
+      className={
+        sticky ? "search__block-info sticky__info" : "search__block-info"
+      }
       onMouseEnter={handlerMouseEnter}
       onMouseLeave={handlerMouseLeave}
     >

@@ -8,7 +8,7 @@ const Search = ({ sticky }: { sticky: boolean }) => {
   const inputRef = useRef<HTMLInputElement>(null);
   return (
     <div className="search__block">
-      <ButtonInfo />
+      <ButtonInfo sticky={sticky} />
       <Input ref={inputRef} />
       <ButtonFind ref={inputRef} />
     </div>
