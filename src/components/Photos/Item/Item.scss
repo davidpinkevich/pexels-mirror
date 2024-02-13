@@ -1,0 +1,27 @@
+@import "../../../styles/mixins.scss";
+
+.photo {
+  position: relative;
+  width: 429px;
+  height: 650px;
+
+  @media (max-width: 1520px) {
+    @include adaptiv-320(width, 429, 200);
+  }
+
+  & img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.photo__height {
+  height: 650px;
+}
+
+.photo__width {
+  height: 287px;
+}
