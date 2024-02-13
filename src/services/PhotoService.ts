@@ -1,11 +1,11 @@
 import { api } from "./baseApi";
-import { TypePhotos } from "components/Photos/Items/Items.types";
+import { TypeData } from "pages/MainPage/MainPage.types";
 
 class PhotoService {
-  async getPhotos(): Promise<TypePhotos> {
-    return await api.get("v1/curated").json();
+  async getPhotos(page: number): Promise<TypeData> {
+    return await api.get(`v1/curated?page=${page}`).json();
   }
-  async searchPhotos(trands: string): Promise<TypePhotos> {
+  async searchPhotos(trands: string): Promise<TypeData> {
     return await api.get(`v1/search?${trands}`).json();
   }
 }
