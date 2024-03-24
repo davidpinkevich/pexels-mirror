@@ -11,14 +11,14 @@
   &:hover &__img:after {
     opacity: 0.3;
   }
-  &:hover &__name-white {
+  &:hover &__name_white {
     color: rgb(176, 173, 173);
   }
-  &__name-white {
+  &__name_white {
     transition: all 0.2s;
     color: rgb(255, 255, 255);
   }
-  &__name-black {
+  &__name_black {
     transition: all 0.2s;
     color: rgb(0, 0, 0);
   }

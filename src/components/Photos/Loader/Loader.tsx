@@ -1,9 +1,9 @@
 import { PulseLoader } from "react-spinners";
-import "./Loader.scss";
+import styles from "./styles.module.scss";
 
 const Loader = () => {
   return (
-    <div className="loader">
+    <div className={styles.loader}>
       <PulseLoader color="#707776" />
     </div>
   );

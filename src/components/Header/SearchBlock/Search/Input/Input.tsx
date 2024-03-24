@@ -1,6 +1,6 @@
 import { forwardRef, ForwardedRef, KeyboardEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Input.scss";
+import styles from "./styles.module.scss";
 
 const Input = forwardRef((_, ref: ForwardedRef<HTMLInputElement>) => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const Input = forwardRef((_, ref: ForwardedRef<HTMLInputElement>) => {
     }
   };
   return (
-    <div className="search__block-input">
+    <div className={styles.search__block_input}>
       <input
         ref={ref}
         onKeyDown={handleClick}

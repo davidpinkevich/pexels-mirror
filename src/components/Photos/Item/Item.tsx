@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { addClassColumns } from "utils/helpers/addClassColumns";
 import { TypePhoto } from "./Item.types";
-import "./Item.scss";
+import "./styles.scss";
 
 const Item = memo((props: TypePhoto) => {
   return (

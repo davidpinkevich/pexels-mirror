@@ -1,11 +1,12 @@
+import classNames from "classnames";
 import Search from "./Search/Search";
 import Trands from "./Trands/Trands";
-import "./SearchBlock.scss";
+import styles from "./styles.module.scss";
 
 const SearchBlock = () => {
   return (
-    <div className="header__search search">
-      <h2 className="search__title">
+    <div className={classNames("header__search", styles.search)}>
+      <h2 className={styles.search__title}>
         Лучшие бесплатные стоковые фото, изображения без роялти и видео от
         талантливых авторов.
       </h2>

@@ -1,11 +1,12 @@
 import { memo } from "react";
+import classNames from "classnames";
 import Item from "../Item/Item";
 import { TypeColumn } from "./Column.type";
-import "./Column.scss";
+import styles from "./styles.module.scss";
 
 const Column = memo(({ items }: TypeColumn) => {
   return (
-    <div className="pexels__items-column column__photos">
+    <div className={classNames("pexels__items-column", styles.column__photos)}>
       {items.map((item, index) => (
         <Item key={index} {...item} />
       ))}

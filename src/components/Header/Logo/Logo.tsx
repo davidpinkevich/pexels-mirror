@@ -1,14 +1,16 @@
+import classNames from "classnames";
 import { LINKS } from "utils/constants";
 import img from "../../../assets/icons/logo.svg";
-import "./Logo.scss";
+import styles from "./styles.module.scss";
 
 const Logo = ({ sticky }: { sticky: boolean }) => {
+  const color = sticky ? styles.logo__name_black : styles.logo__name_white;
   return (
-    <a href={LINKS.MAIN} className="header__logo logo">
-      <div className="logo__img">
+    <a href={LINKS.MAIN} className={classNames("header__logo", styles.logo)}>
+      <div className={styles.logo__img}>
         <img src={img} alt="logo" />
       </div>
-      <p className={sticky ? "logo__name-black" : "logo__name-white"}>Pexels</p>
+      <p className={color}>Pexels</p>
     </a>
   );
 };
